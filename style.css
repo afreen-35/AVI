@@ -1,0 +1,16 @@
+h1 {
+    color: rgb(2, 2, 2);
+    text-align: center;
+}
+
+p {
+    color: rgb(255, 36, 36);
+    font-size: 18px;
+}
+
+button {
+    background-color: rgb(17, 211, 195);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+}
