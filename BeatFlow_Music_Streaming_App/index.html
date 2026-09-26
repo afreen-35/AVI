@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeatFlow Music Streaming</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="toast"></div>
+<section id="auth" class="auth"><div class="authbox">
+<h1>♫ BeatFlow</h1><p>Stream your music. Build your vibe.</p>
+<div class="tabs"><button id="loginTab">Login</button><button id="signupTab">Sign Up</button></div>
+<form id="loginForm"><input id="lemail" type="email" placeholder="Email" required><input id="lpass" type="password" placeholder="Password" required><button>Login</button><button type="button" id="demo">Demo Login</button></form>
+<form id="signupForm" class="hide"><input id="sname" placeholder="Full name" required><input id="semail" type="email" placeholder="Email" required><input id="spass" type="password" minlength="6" placeholder="Password" required><button>Create Account</button></form>
+<small>Demo: demo@beatflow.com / 123456</small></div></section>
+
+<div id="app" class="hide app">
+<aside><h2>♫ BeatFlow</h2><nav>
+<button data-page="home">⌂ Home</button><button data-page="search">⌕ Search</button><button data-page="library">▣ Library</button><button data-page="admin" id="adminNav">⚙ Admin</button>
+</nav><button id="logout">⇥ Logout</button></aside>
+<main><header><span>Music Streaming App</span><span id="user"></span></header>
+<section id="home" class="page"><div class="hero"><div><small>YOUR DAILY SOUNDTRACK</small><h1>Music for every moment.</h1><p>Discover songs, save favorites and track your listening.</p><button id="playHero">▶ Play Music</button></div><b>♫</b></div><h2>Quick Picks</h2><div id="songs" class="grid"></div><h2>Made For You</h2><div class="playlists"><div>🎧<h3>Focus Flow</h3><p>Chill sounds for concentration.</p></div><div>⚡<h3>Energy Boost</h3><p>High-energy tracks for workouts.</p></div><div>🌙<h3>Night Vibes</h3><p>Relaxed songs for evenings.</p></div></div></section>
+<section id="search" class="page hide"><h1>Search</h1><input id="query" class="search" placeholder="Search songs, artists or genres"><div id="results" class="grid"></div></section>
+<section id="library" class="page hide"><h1>Your Library</h1><button id="favTab">Favorites</button> <button id="recentTab">Recently Played</button><div id="libraryResults" class="grid"></div></section>
+<section id="admin" class="page hide"><h1>Admin Dashboard</h1><div class="stats"><div>Songs<strong id="songCount"></strong></div><div>Users<strong id="userCount"></strong></div><div>Favorites<strong id="favCount"></strong></div></div>
+<form id="addSong" class="add"><input id="title" placeholder="Song title" required><input id="artist" placeholder="Artist" required><select id="genre"><option>Pop</option><option>Hip-Hop</option><option>R&B</option><option>Rock</option><option>Electronic</option><option>Chill</option></select><button>Add Song</button></form><div id="adminSongs"></div></section>
+</main>
+<footer><div><b id="nowTitle">Choose a song</b><small id="nowArtist">BeatFlow</small></div><button id="prev">⏮</button><button id="play">▶</button><button id="next">⏭</button><input type="range" id="progress" value="0"></footer>
+</div><script src="script.js"></script></body></html>
